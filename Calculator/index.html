@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<title>Calculator</title>
+		<link rel="stylesheet" href="styles.css" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+	</head>
+	<body>
+		<main class="app">
+			<section class="calculator" role="application" aria-label="Calculator">
+				<div class="display" aria-live="polite" aria-atomic="true">
+					<div id="history" class="history" aria-hidden="true"></div>
+					<div id="output" class="output" title="Current value">0</div>
+				</div>
+
+				<div class="keys" role="group" aria-label="Calculator keys">
+					<button class="key key-func" data-action="all-clear" aria-label="All clear">AC</button>
+					<button class="key key-func" data-action="clear-entry" aria-label="Clear entry">C</button>
+					<button class="key key-func" data-action="backspace" aria-label="Backspace">⌫</button>
+					<button class="key key-op" data-operator="divide" aria-label="Divide">÷</button>
+
+					<button class="key" data-digit="7">7</button>
+					<button class="key" data-digit="8">8</button>
+					<button class="key" data-digit="9">9</button>
+					<button class="key key-op" data-operator="multiply" aria-label="Multiply">×</button>
+
+					<button class="key" data-digit="4">4</button>
+					<button class="key" data-digit="5">5</button>
+					<button class="key" data-digit="6">6</button>
+					<button class="key key-op" data-operator="subtract" aria-label="Subtract">−</button>
+
+					<button class="key" data-digit="1">1</button>
+					<button class="key" data-digit="2">2</button>
+					<button class="key" data-digit="3">3</button>
+					<button class="key key-op" data-operator="add" aria-label="Add">+</button>
+
+					<button class="key" data-action="negate" aria-label="Toggle sign">±</button>
+					<button class="key" data-digit="0">0</button>
+					<button class="key" data-action="decimal" aria-label="Decimal point">.</button>
+					<button class="key key-equals" data-action="equals" aria-label="Equals">=</button>
+
+					<button class="key key-func span-2" data-action="percent" aria-label="Percent">%</button>
+				</div>
+			</section>
+			<footer class="footer">
+				<span>Keyboard: 0-9 . + - * / = Enter Backspace Delete Esc %</span>
+			</footer>
+		</main>
+		<script src="script.js"></script>
+	</body>
+</html> 
